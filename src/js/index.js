@@ -43,8 +43,24 @@ console.log(moment().startOf('day').fromNow());
 
 const MyClock = (time) => {
     const hour = document.querySelector(".section__paragraph--js");
-    time = moment().format('MMMM Do YYYY, h:mm:ss a');
-    hour.innerHTML = time;
+    hour.innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
    
 }
 setInterval(MyClock, 1000);
+
+let isDark = false;
+const darkMode = document.querySelector(".heading__button--js");
+
+darkMode.addEventListener('click', ()=>{
+    console.log("KLIK");
+    if(isDark==true){
+        document.documentElement.style.setProperty('--background-color', 'white');
+        document.documentElement.style.setProperty('--color', 'black');
+        isDark=false;
+    }else{
+        document.documentElement.style.setProperty('--background-color', 'black');
+        document.documentElement.style.setProperty('--color', 'white');
+        isDark=true;
+    }
+
+})

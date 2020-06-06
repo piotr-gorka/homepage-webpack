@@ -87,6 +87,12 @@ module.exports = {
       chunks: ["index", "another"],
       filename: "nauka-git.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/dark-mode.html",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "dark-mode.html",
+    }),
     
   ],
 };
