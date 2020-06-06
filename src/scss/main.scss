@@ -100,6 +100,7 @@ main {
     background-color: #c57b57;
     width: 100%;
     display: block;
+    margin-bottom:150px;
   }
   &__link {
     text-decoration: none;
@@ -122,9 +123,6 @@ main {
     text-align: center;
   }
 
-  &__heading--main-heading {
-    margin-top: 100px;
-  }
   &__heading--wtf {
     color: #684a52;
     font-family: Georgia;
@@ -135,7 +133,7 @@ main {
     color: #d7e8ba;
     text-shadow: 2px 2px 8px #f1ab86;
     font-family: Lucida, sans-serif;
-    margin-top: 127px;
+    
   }
   &__logo {
     width: 300px;
@@ -164,7 +162,7 @@ main {
   background: #c57b57;
 }
 .hamburger {
-  position: absolute;
+  position: fixed;
   top: 16px;
   right: 16px;
 }
