@@ -1,5 +1,5 @@
 @import "~normalize.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,600&display=swap');
 @import "_variables";
 @import "modules/hello.scss";
 @import "modules/dark-mode.scss";
@@ -17,8 +17,8 @@ html {
 body {
   background: #a58a7f;
   background-repeat: no-repeat;
-  background: #c57b57;
-  font-family: Georgia;
+  background: #0d5313;
+  font-family: 'Raleway', sans-serif;
   margin: 0 auto;
 }
 
@@ -108,7 +108,7 @@ main {
 }
 /*Style section */
 .section {
-  background-color: #f1ab86;
+  background-color: #e9d842;
   margin: 0 auto;
   width: 100%;
 
