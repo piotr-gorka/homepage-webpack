@@ -1,14 +1,16 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# WTF?! Co ten frontend by Piotr Górka
 
-Simple toolkit for your static websites development.
+Witaj na mojej stronie `homepage`, która jest swego rodzajem poligonem doświadczalnym w ramach szkolenia Maćka Korsana.
 
-## How to use it?
+## Co tutaj znajdę?
+- Wszelkie rzeczy testowane podczas szkolenia
+- Konkretną dawkę frontendowego bałaganu :)
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+## Jak odpalić tę stronę?
 
-## Available scripts
+`git clone [adres repozytorium]` - download repo
 
 `npm run start` - runs development mode
 
