@@ -1,9 +1,18 @@
 @import "~normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,600&display=swap");
 @import "_variables";
 @import "modules/hello.scss";
 @import "modules/dark-mode.scss";
 
+@keyframes animate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+    color: #0f0f0f;
+  }
+}
 
 html {
   box-sizing: border-box;
@@ -18,7 +27,7 @@ body {
   background: #a58a7f;
   background-repeat: no-repeat;
   background: #0d5313;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0 auto;
 }
 
@@ -96,14 +105,17 @@ main {
     background-color: #c57b57;
     width: 100%;
     display: block;
-    margin-bottom:150px;
+    margin-bottom: 150px;
   }
-  &__link {
+  &__link{
     text-decoration: none;
     font-size: 1em;
     color: white;
     margin: 16px;
     display: block;
+    :hover {
+      animation: animate 1s linear infinite alternate;
+    }
   }
 }
 /*Style section */
@@ -129,7 +141,6 @@ main {
     color: #d7e8ba;
     text-shadow: 2px 2px 8px #f1ab86;
     font-family: Lucida, sans-serif;
-    
   }
   &__logo {
     width: 300px;
@@ -146,9 +157,9 @@ main {
     letter-spacing: 2px;
   }
 }
-.grid__tag{
+.grid__tag {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(230px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .footer {
@@ -171,6 +182,10 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-around;
+
+    &__link:hover {
+      animation: animate 1s linear infinite alternate;
+    }
   }
   .hamburger {
     display: none;
